@@ -39,7 +39,7 @@ if "@aeon-actions-bot" in body and "assign" in body and not pr:
         else:
             comment_msg = (
                 f"@{commenter}, you cannot assign @{user}"
-                "because you lack write access.\n"
+                " because you lack write access.\n"
                 "Only users with write access can assign others."
             )
             issue.create_comment(comment_msg)
